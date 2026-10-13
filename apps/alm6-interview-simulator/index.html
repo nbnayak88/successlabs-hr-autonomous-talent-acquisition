@@ -26,7 +26,19 @@ const $=id=>document.getElementById(id), state={questions:[],index:0,attempted:n
 const storage='successlabs-alm6-simulator-v1';try{const old=JSON.parse(localStorage.getItem(storage)||'{}');state.answers=old.answers||{};state.attempted=new Set(old.attempted||[])}catch{}
 themes.forEach((t,i)=>{const o=document.createElement('option');o.value=i;o.textContent=String(i+1).padStart(2,'0')+' · '+t[0];$('theme').append(o)});
 function plain(s){return s.replace(/\r/g,'').replace(/\*\*/g,'').replace(/`/g,'').replace(/^\s*[-*>]\s?/gm,'').trim()}
-function parse(md,ti,path){const lines=md.split('\n'),heads=[];lines.forEach((x,i)=>{const m=x.match(/^##\s+(\d{1,2})\.\s+(.+?)\s*$/);if(m)heads.push({n:+m[1],title:m[2],i})});return heads.map((h,j)=>{const block=lines.slice(h.i,heads[j+1]?.i??lines.length).join('\n');const get=label=>{const re=new RegExp('(?:^|\\n)\\s*(?:[-*]\\s*)?\\*\\*'+label+'\\s*:\\*\\*\\s*([\\s\\S]*?)(?=\\n\\s*(?:[-*]\\s*)?\\*\\*(?:Situation|Task|Action|Result|SAP SuccessFactors Learning example|Product example|SME Probe|Question)\\s*:\\*\\*|\\n## |$)','i');const m=block.match(re);return m?plain(m[1]):''};let question=get('Question');if(!question){const m=block.match(/\*\*Question:\*\*\s*([^\n]+)/i);question=m?plain(m[1]):''}return{id:'ALM6-T'+String(ti+1).padStart(2,'0')+'-Q'+String(h.n).padStart(2,'0'),n:h.n,ti,title:plain(h.title),path,question,star:{Situation:get('Situation'),Task:get('Task'),Action:get('Action'),Result:get('Result')},example:get('SAP SuccessFactors Learning example')||get('Product example'),probe:get('SME Probe')}}).filter(q=>q.n>0&&q.n<=20)}
+function parse(md,ti,path){
+ const lines=md.split('\n'),heads=[];
+ lines.forEach((x,i)=>{const m=x.match(/^##\s+(?:Q)?(\d{1,2})(?:\s*[—–-]\s*|\.\s+)(.+?)\s*$/);if(m)heads.push({n:+m[1],title:m[2],i})});
+ const clean=s=>plain(s.replace(/^#{2,6}\s+.*$/gm,'').replace(/^---\s*$/gm,'').trim());
+ const inline=(block,label)=>{const re=new RegExp('(?:^|\\n)\\s*(?:[-*]\\s*)?\\*\\*'+label+'\\s*:\\*\\*\\s*([\\s\\S]*?)(?=\\n\\s*(?:[-*]\\s*)?\\*\\*(?:Situation|Task|Action|Result|SAP SuccessFactors Learning example|Product example|SME Probe|Question)\\s*:\\*\\*|\\n## |$)','i');const m=block.match(re);return m?clean(m[1]):''};
+ const section=(block,label)=>{const re=new RegExp('(?:^|\\n)###\\s+'+label+'\\s*\\n([\\s\\S]*?)(?=\\n###\\s+|\\n---\\s*$|$)','i');const m=block.match(re);return m?clean(m[1]):''};
+ return heads.map((h,j)=>{const block=lines.slice(h.i,heads[j+1]?.i??lines.length).join('\n');
+ let question=inline(block,'Question')||section(block,'Interview Question');
+ if(!question){const m=block.match(/\\*\\*Question:\\*\\*\\s*([^\\n]+)/i);question=m?clean(m[1]):''}
+ const get=f=>inline(block,f);
+ return{id:'ALM6-T'+String(ti+1).padStart(2,'0')+'-Q'+String(h.n).padStart(2,'0'),n:h.n,ti,title:clean(h.title),path,question,star:{Situation:get('Situation'),Task:get('Task'),Action:get('Action'),Result:get('Result')},example:get('SAP SuccessFactors Learning example')||get('Product example')||section(block,'SAP SuccessFactors Learning Example'),probe:get('SME Probe')||section(block,'SME Probe')};
+ }).filter(q=>q.n>0&&q.n<=20)
+}
 async function load(i){if(state.cache[i])return state.cache[i];$('status').textContent='Loading source theme '+(i+1)+'…';const res=await fetch(base+themes[i][1]);if(!res.ok)throw Error('Could not load theme source (HTTP '+res.status+').');const md=await res.text(),qs=parse(md,i,themes[i][1]);if(!qs.length)throw Error('Could not identify numbered questions in source.');state.cache[i]=qs;return qs}
 function current(){return state.questions[state.index]}function ans(q){return state.answers[q.id]||{Situation:'',Task:'',Action:'',Result:'',reflection:'',scores:{}}}
 function persist(){try{localStorage.setItem(storage,JSON.stringify({answers:state.answers,attempted:[...state.attempted]}))}catch{}}
