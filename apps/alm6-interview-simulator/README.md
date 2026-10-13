@@ -25,12 +25,23 @@ A static, source-linked practice application for **Applied SAP SuccessFactors Le
 
 Open `index.html` in a modern browser while connected to the internet. The application fetches theme content from GitHub, so source loading requires network access. If browser file restrictions prevent loading, serve this folder with any static HTTP server or use the GitHub Pages deployment option below.
 
-## Deploy with GitHub Pages
+## GitHub-only QA and deployment
 
-1. In the repository settings, open **Pages**.
-2. Select the branch used for the repository and the root folder as the publishing source.
-3. Because the application is in a subfolder, either publish the repository root and use the app path, or copy the file to the selected publishing root as a deliberate release step.
-4. Open the resulting Pages URL and verify theme loading, mobile layout, source links, browser-local save, and text export.
+- Automated QA workflow: [ALM6 simulator QA](../../../.github/workflows/alm6-simulator-qa.yml)
+- GitHub Pages deployment workflow: [Publish ALM6 Interview Simulator](../../../.github/workflows/alm6-simulator-pages.yml)
+- Automated tests: [smoke and source-ingestion suite](./tests/smoke.test.mjs)
+
+### Enable GitHub Pages
+
+1. In the repository, open **Settings → Pages**.
+2. Under **Build and deployment**, set the source to **GitHub Actions**.
+3. Confirm repository Actions permissions allow the workflow to run.
+4. The Pages workflow publishes the contents of this application folder when relevant files change on `main`, or when manually run from the **Actions** tab.
+5. Open the deployment URL reported by the `github-pages` environment and verify theme loading, mobile layout, source links, browser-local save, and text export.
+
+Expected URL for this repository, once Pages is enabled and a deployment succeeds: `https://nbnayak88.github.io/successlabs-hr-autonomous-talent-acquisition/`. This is an expected address, not a claim that the site is live; verify the deployment run before sharing it.
+
+The QA workflow validates source headings and parsed fields against the 22 Markdown files. Browser interaction, accessibility, and SME review still require their respective checks; a passing automated test is not a substitute for those release gates.
 
 No backend, API key, or server-side database is required for this MVP. Do not enter confidential client or employer information into practice answers on a shared device.
 
