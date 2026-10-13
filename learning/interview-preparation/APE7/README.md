@@ -31,9 +31,12 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–21 are currently authored (420 scenarios); remaining theme is planned.
+Target and authored scope: 22 themes × 20 scenarios = 440 scenarios. Structural source QA confirms 20 numbered scenarios per theme and the required Interview Question, STAR Answer, SAP Payroll Example, and SME Probe sections for all 440 scenarios.
 
-Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
+- [440-scenario manifest](./APE7-440-SCENARIO-MANIFEST.md)
+- [Structural source QA report](./APE7-SCENARIO-SOURCE-QA-REPORT.md)
+
+This is structural QA, not a certification of every technical claim. Product/version, country-localisation, statutory, and payroll SME review remain necessary. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
 ## Scope
 
@@ -64,7 +67,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 19 — 20 scenario-based questions
 - [x] Theme 20 — 20 scenario-based questions
 - [x] Theme 21 — 20 scenario-based questions
-- [ ] Theme 22
-- [ ] Full source-field QA and product/country SME review
+- [x] Theme 22
+- [x] Structural source-field QA across all 440 scenarios
+- [ ] Product/version and country-localisation SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
