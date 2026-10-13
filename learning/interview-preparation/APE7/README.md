@@ -8,10 +8,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [440-scenario manifest](./APE7-440-SCENARIO-MANIFEST.md)
 - [Theme 01 — Domain Foundation](./scale-lab/theme-01-domain-foundation/00-theme-01-20-questions.md)
 - [Theme 02 — Product / Technology Knowledge](./scale-lab/theme-02-product-technology-knowledge/00-theme-02-20-questions.md)
+- [Theme 03 — Process & Business Context](./scale-lab/theme-03-process-business-context/00-theme-03-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01 and 02 are currently authored (40 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–03 are currently authored (60 scenarios); remaining themes are planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -24,7 +25,9 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Blueprint
 - [x] Planned scenario manifest
 - [x] Theme 01 — 20 scenario-based questions
-- [ ] Themes 02–22
+- [x] Theme 02 — 20 scenario-based questions
+- [x] Theme 03 — 20 scenario-based questions
+- [ ] Themes 04–22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
