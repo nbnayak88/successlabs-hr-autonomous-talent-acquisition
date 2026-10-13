@@ -19,10 +19,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 11 — Payroll Testing, Quality Assurance & Regression Strategy](./scale-lab/theme-11-payroll-testing-quality-assurance-regression-strategy/00-theme-11-20-questions.md)
 - [Theme 12 — Payroll Migration, Cutover & Hypercare](./scale-lab/theme-12-payroll-migration-cutover-hypercare/00-theme-12-20-questions.md)
 - [Theme 13 — Payroll Compliance, Statutory Reporting & Audit Readiness](./scale-lab/theme-13-payroll-compliance-statutory-reporting-audit-readiness/00-theme-13-20-questions.md)
+- [Theme 14 — Payroll Performance, Scalability & High-Volume Processing](./scale-lab/theme-14-payroll-performance-scalability-high-volume-processing/00-theme-14-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–13 are currently authored (260 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–14 are currently authored (280 scenarios); remaining themes are planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -47,7 +48,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 11 — 20 scenario-based questions
 - [x] Theme 12 — 20 scenario-based questions
 - [x] Theme 13 — 20 scenario-based questions
-- [ ] Themes 14–22
+- [x] Theme 14 — 20 scenario-based questions
+- [ ] Themes 15–22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
