@@ -27,7 +27,7 @@ Open `index.html` in a modern browser while connected to the internet. The appli
 
 ## GitHub-only QA and deployment
 
-- Automated QA workflow: [ALM6 simulator QA](../../../.github/workflows/alm6-simulator-qa.yml)
+- Automated QA workflow: [ALM6 simulator QA](../../.github/workflows/alm6-simulator-qa.yml)
 - GitHub Pages deployment workflow: [Publish ALM6 Interview Simulator](../../../.github/workflows/alm6-simulator-pages.yml)
 - Automated tests: [smoke and source-ingestion suite](./tests/smoke.test.mjs)
 
