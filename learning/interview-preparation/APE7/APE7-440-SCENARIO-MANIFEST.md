@@ -43,9 +43,9 @@ This manifest defines the planned stable IDs and source-file convention. A scena
 
 - [x] Module blueprint established.
 - [x] Stable ID convention and planned 22-theme coverage defined.
-- [ ] Themes 02–22 authored and reviewed.
-- [x] Theme 01 source file authored with 20 numbered scenarios.
-- [ ] All 440 scenarios validated for question, STAR fields, payroll example, and SME probe.
-- [ ] Product, country-localisation, and payroll SME review completed.
+- [x] Themes 01–22 authored; 440 scenario records are present in the source files.
+- [x] Structural QA completed: 20 numbered scenarios and all four required section headings per scenario in each theme file.
+- [x] [Structural source QA report](./APE7-SCENARIO-SOURCE-QA-REPORT.md) published.
+- [ ] Product/version, country-localisation, payroll functional, and architecture SME review completed.
 
-This is a build manifest, not evidence that all 440 scenarios have already been authored.
+This manifest records planned coverage and links to the authored source files. Structural QA confirms the expected counts and section headings; it does not certify product-specific correctness or replace country/payroll SME review.
