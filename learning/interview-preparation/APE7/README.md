@@ -11,10 +11,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 03 — Process & Business Context](./scale-lab/theme-03-process-business-context/00-theme-03-20-questions.md)
 - [Theme 04 — Payroll Data, Inputs & Dependencies](./scale-lab/theme-04-payroll-data-inputs-dependencies/00-theme-04-20-questions.md)
 - [Theme 05 — Payroll Calculation, Schemas & Rules](./scale-lab/theme-05-payroll-calculation-schemas-rules/00-theme-05-20-questions.md)
+- [Theme 06 — Payroll Control, Validation & Exception Management](./scale-lab/theme-06-payroll-control-validation-exceptions/00-theme-06-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–05 are currently authored (100 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–06 are currently authored (120 scenarios); remaining themes are planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -31,7 +32,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 03 — 20 scenario-based questions
 - [x] Theme 04 — 20 scenario-based questions
 - [x] Theme 05 — 20 scenario-based questions
-- [ ] Themes 06–22
+- [x] Theme 06 — 20 scenario-based questions
+- [ ] Themes 07–22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
