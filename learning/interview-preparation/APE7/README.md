@@ -17,10 +17,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 09 — Payroll Security, Privacy & Access Governance](./scale-lab/theme-09-payroll-security-privacy-access-governance/00-theme-09-20-questions.md)
 - [Theme 10 — Payroll Operations, Monitoring & Incident Management](./scale-lab/theme-10-payroll-operations-monitoring-incident-management/00-theme-10-20-questions.md)
 - [Theme 11 — Payroll Testing, Quality Assurance & Regression Strategy](./scale-lab/theme-11-payroll-testing-quality-assurance-regression-strategy/00-theme-11-20-questions.md)
+- [Theme 12 — Payroll Migration, Cutover & Hypercare](./scale-lab/theme-12-payroll-migration-cutover-hypercare/00-theme-12-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–11 are currently authored (220 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–12 are currently authored (240 scenarios); remaining themes are planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -43,7 +44,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 09 — 20 scenario-based questions
 - [x] Theme 10 — 20 scenario-based questions
 - [x] Theme 11 — 20 scenario-based questions
-- [ ] Themes 12–22
+- [x] Theme 12 — 20 scenario-based questions
+- [ ] Themes 13–22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
