@@ -43,7 +43,8 @@ This manifest defines the planned stable IDs and source-file convention. A scena
 
 - [x] Module blueprint established.
 - [x] Stable ID convention and planned 22-theme coverage defined.
-- [ ] Themes 01–22 authored and reviewed.
+- [ ] Themes 02–22 authored and reviewed.
+- [x] Theme 01 source file authored with 20 numbered scenarios.
 - [ ] All 440 scenarios validated for question, STAR fields, payroll example, and SME probe.
 - [ ] Product, country-localisation, and payroll SME review completed.
 
