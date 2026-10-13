@@ -27,6 +27,7 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 19 — Payroll Analytics, Reporting, Insights & AI-Enabled Operations](./scale-lab/theme-19-payroll-analytics-reporting-insights-ai-enabled-operations/00-theme-19-20-questions.md)
 - [Theme 20 — Payroll Programme Delivery, Project Management, RAID & Stakeholder Leadership](./scale-lab/theme-20-payroll-programme-delivery-project-management-raid-stakeholder-leadership/00-theme-20-20-questions.md)
 - [Theme 21 — Payroll Certification, Interview Readiness & Professional Practice](./scale-lab/theme-21-payroll-certification-interview-readiness-professional-practice/00-theme-21-20-questions.md)
+- [Theme 22 — Payroll Architecture Capstone, Executive Defence & Integrated Scenario Challenge](./scale-lab/theme-22-payroll-architecture-capstone-executive-defence-integrated-scenario-challenge/00-theme-22-20-questions.md)
 
 ## Scenario architecture
 
