@@ -412,28 +412,7 @@ Which unresolved gaps are automatic no-go items for a payroll cutover?
 undefined
 
 
-## Q20 — Explain continuous improvement in payroll
-
-### Interview Question
-The payroll team repeatedly fixes the same errors every period and treats them as routine work.
-
-### STAR Answer
-**Situation:** Move from recurring correction to evidence-led prevention.
-
-**Task:** Categorise incidents and exceptions, identify root causes, distinguish data, process, configuration, interface, and training issues, prioritise by employee and compliance impact, and track whether preventive changes reduce recurrence.
-
-**Action:** Improvement work is prioritised by risk and verified through trend data rather than anecdotal feedback.
-
-**Result:** Use a monthly defect Pareto, assign root-cause owners, and measure recurrence after corrective action.
-
-### SAP Payroll Example
-How would you prove that a process change reduced recurrence without shifting errors to another stage?
-
-### SME Probe
-undefined
-
-
-## Q21 — Explain payroll's enterprise architecture value
+## Q20 — Explain payroll's enterprise architecture value
 
 ### Interview Question
 An executive views payroll as a back-office system and questions investment in modernisation.
