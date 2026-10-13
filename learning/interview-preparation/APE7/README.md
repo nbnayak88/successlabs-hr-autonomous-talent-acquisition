@@ -26,10 +26,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 18 — Payroll Transformation Strategy, Operating Model & Business Case](./scale-lab/theme-18-payroll-transformation-strategy-operating-model-business-case/00-theme-18-20-questions.md)
 - [Theme 19 — Payroll Analytics, Reporting, Insights & AI-Enabled Operations](./scale-lab/theme-19-payroll-analytics-reporting-insights-ai-enabled-operations/00-theme-19-20-questions.md)
 - [Theme 20 — Payroll Programme Delivery, Project Management, RAID & Stakeholder Leadership](./scale-lab/theme-20-payroll-programme-delivery-project-management-raid-stakeholder-leadership/00-theme-20-20-questions.md)
+- [Theme 21 — Payroll Certification, Interview Readiness & Professional Practice](./scale-lab/theme-21-payroll-certification-interview-readiness-professional-practice/00-theme-21-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–20 are currently authored (400 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–21 are currently authored (420 scenarios); remaining theme is planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -61,7 +62,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 18 — 20 scenario-based questions
 - [x] Theme 19 — 20 scenario-based questions
 - [x] Theme 20 — 20 scenario-based questions
-- [ ] Themes 21–22
+- [x] Theme 21 — 20 scenario-based questions
+- [ ] Theme 22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
