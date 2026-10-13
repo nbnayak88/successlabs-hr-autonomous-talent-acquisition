@@ -23,10 +23,11 @@ APE7 is the next module in the SuccessLabs Academy HR capability sequence after 
 - [Theme 15 — Payroll Architecture, Solution Design & Technical Decision-Making](./scale-lab/theme-15-payroll-architecture-solution-design-technical-decisions/00-theme-15-20-questions.md)
 - [Theme 16 — Payroll Integration Architecture, APIs & Event-Driven Processing](./scale-lab/theme-16-payroll-integration-architecture-apis-event-driven-processing/00-theme-16-20-questions.md)
 - [Theme 17 — Payroll Data Architecture, Data Quality & Master Data Governance](./scale-lab/theme-17-payroll-data-architecture-data-quality-master-data-governance/00-theme-17-20-questions.md)
+- [Theme 18 — Payroll Transformation Strategy, Operating Model & Business Case](./scale-lab/theme-18-payroll-transformation-strategy-operating-model-business-case/00-theme-18-20-questions.md)
 
 ## Scenario architecture
 
-Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–17 are currently authored (340 scenarios); remaining themes are planned.
+Target scope: 22 themes × 20 scenarios = 440 planned scenarios. The manifest records the planned coverage; only source files actually authored should be treated as available practice content. Themes 01–18 are currently authored (360 scenarios); remaining themes are planned.
 
 Every completed scenario should include an interview question, Situation/Task/Action/Result model answer, payroll-specific example, and SME probe. Answers must remain honest about personal experience and explicit about country and product-version assumptions.
 
@@ -55,7 +56,8 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 - [x] Theme 15 — 20 scenario-based questions
 - [x] Theme 16 — 20 scenario-based questions
 - [x] Theme 17 — 20 scenario-based questions
-- [ ] Themes 18–22
+- [x] Theme 18 — 20 scenario-based questions
+- [ ] Themes 19–22
 - [ ] Full source-field QA and product/country SME review
 
 The module is maintained in GitHub. No separate hosted website is required.
