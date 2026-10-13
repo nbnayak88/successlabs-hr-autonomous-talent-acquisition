@@ -14,6 +14,9 @@
 | Legacy heading format | Pass | Verified `## Q01 — Title` and `## Q01. Title` patterns used in earlier themes. |
 | Newer heading format | Pass | Verified `## 1. Title` pattern used in Themes 21–22 and supported by the parser. |
 | Representative field extraction | Pass | Spot checks on Themes 01, 21, and 22 extracted the question, Situation, Task, Action, Result, product example, and SME probe. |
+| Draft-score persistence fix | Pass by code inspection | Fixed `save()` so typing in a STAR field no longer clears previously selected rubric scores. Browser confirmation remains pending. |
+| Automated QA harness | Added; execution pending | `tests/smoke.test.mjs` checks the 22 theme definitions, key UI controls, score persistence guard, and 20 unique numbered headings per source file (440 total). |
+| GitHub Actions workflow | Added; run status unverified | `.github/workflows/alm6-simulator-qa.yml` runs the Node.js smoke/source-ingestion test suite on relevant pushes and pull requests. |
 | Source provenance | Pass | Each scenario retains its source path and stable theme/question identifier in the UI. |
 
 ## Parser compatibility
@@ -28,6 +31,7 @@ The source collection contains more than one Markdown layout. The application pa
 ## Remaining release checks
 
 These are not represented as completed by this ingestion check:
+- Confirm the GitHub Actions run passes; the workflow was committed but its run result has not been verified here
 - Browser execution and interaction testing in desktop and mobile browsers
 - Field-by-field comparison of all 440 parsed scenarios against their original Markdown
 - Keyboard and screen-reader accessibility review
@@ -37,6 +41,6 @@ These are not represented as completed by this ingestion check:
 
 ## Release decision
 
-**Status: Source-heading ingestion check passed; release validation remains in progress.**
+**Status: Source-heading ingestion check passed; automated checks are committed but their CI result is unverified; release validation remains in progress.**
 
 The app is a static prototype. Its local scoring rubric is for learner reflection and is not a validated hiring assessment. Learners should follow the source links whenever parsed content appears incomplete and must not present illustrative examples as their own work.
