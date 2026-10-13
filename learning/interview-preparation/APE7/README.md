@@ -22,7 +22,7 @@ Prioritise gross-to-net processing, payroll calendars, master and time data, pay
 
 - [x] Blueprint
 - [x] Planned scenario manifest
-- [ ] Theme 01 — 20 scenario-based questions
+- [x] Theme 01 — 20 scenario-based questions
 - [ ] Themes 02–22
 - [ ] Full source-field QA and product/country SME review
 
